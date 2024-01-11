@@ -23,7 +23,7 @@ public class MemberController {
     }
 
     @PutMapping("/member/put")
-    public void saveMember(@RequestParam String loginId, @RequestParam String password, @RequestParam String name, @RequestParam int age) {
+    public void saveMember(@RequestParam String loginId, @RequestParam String password, @RequestParam String name, @RequestParam int age) throws Exception {
         member = new Member(loginId, password, name, age);
         memberDao.saveMember(member);
     }

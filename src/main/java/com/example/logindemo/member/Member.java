@@ -19,6 +19,6 @@ public class Member {
     @NonNull
     private String name; // 유저 이름
     @NonNull
-    private int age; // 유저 나이a
+    private int age; // 유저 나이
     private LocalDateTime createTime; // 생성 시간
 }
