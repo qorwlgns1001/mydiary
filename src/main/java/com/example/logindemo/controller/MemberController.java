@@ -4,6 +4,7 @@ import com.example.logindemo.dao.MemberDao;
 import com.example.logindemo.member.Member;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -24,7 +25,7 @@ public class MemberController {
 
     @PutMapping("/member/put")
     public void saveMember(@RequestParam String loginId, @RequestParam String password, @RequestParam String name, @RequestParam int age) throws Exception {
-        member = new Member(loginId, password, name, age);
+        //member = new Member(loginId, password, name, age);
         memberDao.saveMember(member);
     }
 }

@@ -28,4 +28,5 @@ public class MemberDao {
         member.setCreateTime(LocalDateTime.now());
         map.put(member.getId(), member);
     }
+
 }
